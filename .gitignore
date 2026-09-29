@@ -1,2 +1,30 @@
-NYC_Taxi_Data
-processed_data
+# Large raw dataset - too large for GitHub
+NYC_Taxi_Data/
+processed_data/
+
+# Spark temporary shuffle & block manager files
+spark_temp/
+D:/spark_temp/
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# Windows executable installers
+*.exe
+*.msi
+
+# Log files
+logs/
+
+# IDE settings
+.vscode/
+*.suo
+*.user
+
+# Notebook checkpoints
+.ipynb_checkpoints/
