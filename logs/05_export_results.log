@@ -1,0 +1,26 @@
+2026-09-25 12:45:46,982 [INFO] ======================================================================
+2026-09-25 12:45:46,982 [INFO]        STAGE 5: EXPORT RESULTS FOR POWER BI & CHARTS
+2026-09-25 12:45:46,983 [INFO] ======================================================================
+2026-09-25 12:45:54,655 [INFO] Reading transformed dataset into PySpark...
+2026-09-25 12:45:58,262 [INFO] Calculating and exporting aggregated summary CSVs...
+2026-09-25 12:46:06,889 [INFO] Exported: overall_metrics.csv
+2026-09-25 12:46:14,618 [INFO] Exported: hourly_analysis.csv
+2026-09-25 12:46:22,611 [INFO] Exported: daily_analysis.csv
+2026-09-25 12:46:28,545 [INFO] Exported: monthly_analysis.csv
+2026-09-25 12:46:38,045 [INFO] Exported: payment_analysis.csv
+2026-09-25 12:46:44,042 [INFO] Exported: passenger_analysis.csv
+2026-09-25 12:47:00,266 [INFO] Exported: top_pickup_zones.csv
+2026-09-25 12:47:10,068 [INFO] Exported: borough_analysis.csv
+2026-09-25 12:47:10,068 [INFO] Generating high-resolution visualization charts...
+2026-09-25 12:47:11,006 [INFO] Chart created: hourly_trip_distribution.png
+2026-09-25 12:47:11,171 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-25 12:47:11,173 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-25 12:47:11,521 [INFO] Chart created: monthly_revenue_trend.png
+2026-09-25 12:47:11,986 [INFO] Chart created: payment_type_distribution.png
+2026-09-25 12:47:12,153 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-25 12:47:12,163 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-09-25 12:47:12,365 [INFO] Chart created: passenger_count_analysis.png
+2026-09-25 12:47:12,841 [INFO] Chart created: top_pickup_zones.png
+2026-09-25 12:47:12,841 [INFO] ======================================================================
+2026-09-25 12:47:12,842 [INFO] STAGE 5 COMPLETE: CSVs & Charts exported in 85.86 seconds.
+2026-09-25 12:47:12,842 [INFO] ======================================================================

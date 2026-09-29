@@ -1,0 +1,143 @@
+2026-09-25 12:32:30,536 [INFO] ======================================================================
+2026-09-25 12:32:30,536 [INFO]        STAGE 4: PYSPARK BIG DATA ANALYTICS & SPARK SQL
+2026-09-25 12:32:30,537 [INFO] ======================================================================
+2026-09-25 12:32:40,411 [INFO] Demonstrating Spark Concept: Reading dataset (LAZY EVALUATION)...
+2026-09-25 12:32:42,487 [INFO] Demonstrating Spark Concept: Caching transformed DataFrame into Memory...
+2026-09-25 12:40:49,852 [INFO] DataFrame Cached successfully! Total active records: 313,270,632
+2026-09-25 12:40:49,898 [INFO] DataFrame Partitions: 62
+2026-09-25 12:40:49,898 [INFO] Registering PySpark SQL Temporary Views ('taxi_trips' & 'taxi_zones')...
+2026-09-25 12:40:50,848 [INFO] 
+--- ANALYTICS A: OVERALL SUMMARY METRICS ---
+2026-09-25 12:41:18,202 [INFO] 
+   total_trips  total_revenue_usd  avg_fare_usd  avg_trip_distance_miles  avg_trip_duration_minutes  avg_tip_usd  avg_tip_percentage
+0    313270632       5.036877e+09          12.9                     2.98                      15.94         1.75               13.72
+2026-09-25 12:41:18,202 [INFO] 
+--- ANALYTICS B: HOURLY & PEAK TRAVEL ANALYSIS ---
+2026-09-25 12:41:53,396 [INFO] 
+    pickup_hour  trip_count  total_revenue_usd  avg_fare_usd  avg_distance_miles  avg_duration_minutes
+0             0    11573316       1.923523e+08         13.31                3.41                 15.30
+1             1     8490198       1.357501e+08         12.85                3.34                 15.47
+2             2     6225229       9.781371e+07         12.68                3.33                 14.28
+3             3     4546567       7.400956e+07         13.23                3.56                 14.47
+4             4     3429728       6.401027e+07         15.19                4.32                 14.87
+5             5     3251503       6.609690e+07         16.15                4.78                 13.88
+6             6     7048756       1.144588e+08         13.13                3.60                 12.95
+7             7    11701053       1.751999e+08         12.13                2.93                 13.96
+8             8    14228506       2.146480e+08         12.25                2.65                 15.34
+9             9    14474463       2.184792e+08         12.30                2.59                 15.55
+10           10    14215610       2.171152e+08         12.50                2.67                 15.88
+11           11    14789043       2.284128e+08         12.68                2.69                 16.38
+12           12    15527075       2.415497e+08         12.78                2.71                 16.55
+13           13    15508617       2.490442e+08         13.19                2.88                 16.99
+14           14    16084005       2.671402e+08         13.65                3.01                 17.95
+15           15    15495185       2.580302e+08         13.66                2.99                 18.37
+16           16    13771191       2.400172e+08         13.69                3.05                 18.31
+17           17    16176564       2.720873e+08         13.18                2.87                 17.76
+18           18    19068844       3.029150e+08         12.37                2.65                 16.33
+19           19    19341271       2.996750e+08         12.01                2.68                 15.12
+20           20    18148538       2.835585e+08         12.30                2.92                 14.77
+21           21    17975701       2.879854e+08         12.64                3.08                 14.87
+22           22    17270391       2.842693e+08         13.05                3.21                 15.29
+23           23    14929278       2.522584e+08         13.46                3.40                 15.45
+2026-09-25 12:41:53,396 [INFO] 
+--- ANALYTICS B2: DAY OF WEEK ANALYSIS ---
+2026-09-25 12:42:31,059 [INFO] 
+   pickup_day_num pickup_day_of_week  trip_count  total_revenue_usd  avg_fare_usd  avg_distance_miles
+0               1             Sunday    42215166       6.722046e+08         12.94                3.24
+1               2             Monday    39973679       6.485965e+08         12.93                3.10
+2               3            Tuesday    43191371       6.950012e+08         12.81                2.89
+3               4          Wednesday    45161251       7.379298e+08         13.01                2.91
+4               5           Thursday    46736609       7.743249e+08         13.21                2.95
+5               6             Friday    47866519       7.831558e+08         13.08                2.96
+6               7           Saturday    48126037       7.256644e+08         12.32                2.86
+2026-09-25 12:42:31,059 [INFO] 
+--- ANALYTICS B3: MONTHLY ANALYSIS ---
+2026-09-25 12:43:03,071 [INFO] 
+    pickup_year  pickup_month  trip_count  total_revenue_usd  avg_fare_usd  avg_distance_miles
+0          2015             1    12616853       1.862354e+08         11.87                2.80
+1          2015             2    12320559       1.887456e+08         12.29                2.82
+2          2015             3    13207090       2.076186e+08         12.62                2.93
+3          2015             4    12935964       2.061502e+08         12.83                2.97
+4          2015             5    13026795       2.134371e+08         13.23                3.09
+5          2015             6    12202982       1.988627e+08         13.13                3.04
+6          2015             7    11445509       1.838930e+08         12.96                3.04
+7          2015             8    11013830       1.772790e+08         13.00                3.11
+8          2015             9    11105366       1.820579e+08         13.22                3.09
+9          2015            10    12187841       2.006709e+08         13.25                3.05
+10         2015            11    11193503       1.825128e+08         13.11                3.03
+11         2015            12    11341026       1.840871e+08         13.06                2.99
+12         2016             1    10801700       1.683087e+08         12.43                2.92
+13         2016             2    11270437       1.749480e+08         12.34                2.87
+14         2016             3    12091904       1.928800e+08         12.70                2.97
+15         2016             4    11810686       1.908081e+08         12.90                2.97
+16         2016             5    11718902       1.945530e+08         13.31                3.08
+17         2016             6    11022828       1.833914e+08         13.32                3.06
+18         2016             7    10190691       1.668262e+08         13.15                3.07
+19         2016             8     9843372       1.605479e+08         13.10                3.06
+20         2016             9    10014324       1.688492e+08         13.55                3.09
+21         2016            10    10747589       1.776776e+08         13.28                3.03
+22         2016            11     9999833       1.652094e+08         13.25                2.97
+23         2016            12    10341018       1.671151e+08         12.97                2.91
+24         2017             1     9614500       1.476101e+08         12.21                2.84
+25         2017             2     9077253       1.406283e+08         12.30                2.82
+26         2017             3    10188205       1.646458e+08         12.85                2.91
+27         2017             4     9940072       1.613279e+08         12.96                2.98
+2026-09-25 12:43:03,071 [INFO] 
+--- ANALYTICS C & D: PAYMENT TYPE & REVENUE BREAKDOWN ---
+2026-09-25 12:43:45,740 [INFO] 
+  payment_type_name  trip_count  total_revenue_usd  avg_fare_usd  avg_tip_usd  avg_tip_percentage
+0       Credit Card   203115213       3.562204e+09         13.36         2.70               21.15
+1              Cash   109014731       1.455449e+09         12.02         0.00                0.00
+2         No Charge      837803       1.411628e+07         15.05         0.00                0.05
+3           Dispute      302864       5.107799e+06         15.11         0.00                0.03
+4           Unknown          21       5.951700e+02         23.84         1.85                4.76
+2026-09-25 12:43:45,740 [INFO] 
+--- ANALYTICS E: PASSENGER COUNT ANALYSIS ---
+2026-09-25 12:44:13,840 [INFO] 
+   passenger_count  trip_count  total_revenue_usd  avg_fare_usd  avg_distance_miles
+0                1   221629484       3.520715e+09         12.71                2.92
+1                2    45228796       7.601228e+08         13.53                3.19
+2                3    13092886       2.146297e+08         13.27                3.09
+3                4     6340081       1.050829e+08         13.55                3.17
+4                5    16529206       2.692995e+08         13.05                3.08
+5                6    10449474       1.669784e+08         12.84                3.00
+6                7         268       1.450434e+04         45.39                8.23
+7                8         199       1.740594e+04         73.43               13.80
+8                9         238       1.738606e+04         60.45               12.34
+2026-09-25 12:44:13,847 [INFO] 
+--- ANALYTICS F: TOP PICKUP TAXI ZONES ---
+2026-09-25 12:44:58,974 [INFO] 
+    location_id    borough                     zone_name  pickup_trip_count  total_revenue_usd  avg_fare_usd  avg_distance_miles
+0           237  Manhattan         Upper East Side South           11709851       1.422886e+08          9.73                1.85
+1           161  Manhattan                Midtown Center           11130343       1.645864e+08         11.77                2.45
+2           236  Manhattan         Upper East Side North           10667744       1.354305e+08         10.18                2.02
+3           186  Manhattan  Penn Station/Madison Sq West           10470009       1.517722e+08         11.73                2.35
+4           162  Manhattan                  Midtown East           10361328       1.543143e+08         11.78                2.48
+5           234  Manhattan                      Union Sq           10302364       1.423471e+08         10.90                2.17
+6           230  Manhattan     Times Sq/Theatre District           10165548       1.640356e+08         12.97                2.89
+7            79  Manhattan                  East Village           10146658       1.479115e+08         11.64                2.57
+8           170  Manhattan                   Murray Hill           10111180       1.441244e+08         11.26                2.32
+9            48  Manhattan                  Clinton East            9849832       1.419460e+08         11.63                2.54
+10          142  Manhattan           Lincoln Square East            8771757       1.182396e+08         10.79                2.23
+11          163  Manhattan                 Midtown North            8320235       1.227316e+08         11.85                2.47
+12          107  Manhattan                      Gramercy            8002759       1.097266e+08         10.84                2.21
+13           68  Manhattan                  East Chelsea            7808816       1.119031e+08         11.45                2.40
+14          164  Manhattan                 Midtown South            7685449       1.120878e+08         11.60                2.47
+2026-09-25 12:44:58,974 [INFO] 
+--- ANALYTICS F2: BOROUGH LEVEL REVENUE & TRIP SUMMARY ---
+2026-09-25 12:45:35,712 [INFO] 
+         borough  total_trips  total_revenue_usd  avg_fare_usd  avg_distance_miles
+0      Manhattan    285334332       4.098686e+09         11.52                2.46
+1         Queens     17790449       7.704002e+08         34.73               11.18
+2       Brooklyn      5430225       9.169432e+07         13.78                3.45
+3        Unknown      4408882       6.928939e+07         12.61                2.87
+4          Bronx       232853       3.995614e+06         14.63                3.69
+5            N/A        64144       2.493345e+06         32.29                4.32
+6  Staten Island         8144       1.949495e+05         19.02                4.31
+7            EWR         1603       1.237522e+05         63.32                6.99
+2026-09-25 12:45:35,712 [INFO] 
+Demonstrating Spark Concept: Query Execution Plan (explain()):
+2026-09-25 12:45:35,712 [INFO] Hourly Aggregation Logical & Physical DAG Plan:
+2026-09-25 12:45:35,723 [INFO] ======================================================================
+2026-09-25 12:45:35,723 [INFO] STAGE 4 COMPLETE: Analytics & SQL Queries executed in 785.19 seconds.
+2026-09-25 12:45:35,723 [INFO] ======================================================================

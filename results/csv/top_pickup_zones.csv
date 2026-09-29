@@ -1,0 +1,21 @@
+location_id,borough,zone_name,pickup_trip_count,total_revenue_usd,avg_fare_usd,avg_distance_miles
+237,Manhattan,Upper East Side South,11709851,142288556.29,9.73,1.85
+161,Manhattan,Midtown Center,11130343,164586376.35,11.77,2.45
+236,Manhattan,Upper East Side North,10667744,135430506.48,10.18,2.02
+186,Manhattan,Penn Station/Madison Sq West,10470009,151772156.82,11.73,2.35
+162,Manhattan,Midtown East,10361328,154314298.07,11.78,2.48
+234,Manhattan,Union Sq,10302364,142347105.46,10.9,2.17
+230,Manhattan,Times Sq/Theatre District,10165548,164035643.7,12.97,2.89
+79,Manhattan,East Village,10146658,147911513.57,11.64,2.57
+170,Manhattan,Murray Hill,10111180,144124352.39,11.26,2.32
+48,Manhattan,Clinton East,9849832,141945970.43,11.63,2.54
+142,Manhattan,Lincoln Square East,8771757,118239636.11,10.79,2.23
+163,Manhattan,Midtown North,8320235,122731579.82,11.85,2.47
+107,Manhattan,Gramercy,8002759,109726640.55,10.84,2.21
+68,Manhattan,East Chelsea,7808816,111903077.53,11.45,2.4
+164,Manhattan,Midtown South,7685449,112087812.25,11.6,2.47
+239,Manhattan,Upper West Side South,7653933,100887712.36,10.53,2.25
+138,Queens,LaGuardia Airport,7638706,324597168.8,32.35,9.85
+141,Manhattan,Lenox Hill West,7256935,92962001.63,10.27,2.15
+249,Manhattan,West Village,6840477,96144445.3,11.18,2.38
+132,Queens,JFK Airport,6746252,379514946.82,46.82,16.34
